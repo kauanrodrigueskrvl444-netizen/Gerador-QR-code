@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador QR Code</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="left">
+
+            <h1>Crie seu código QR<br>em apenas alguns cliques</h1>
+
+            <p>
+                Cole uma URL ou insira um texto para criar um código QR
+            </p>
+
+            <input type="text" id="campo-qr" placeholder="Digite um texto ou URL">
+
+            <button onclick="gerarCodigoQr()">
+                Gerar Código QR
+            </button>
+
+        </section>
+
+        <section class="right">
+
+            <div id="box"></div>
+
+            <a id="download" download="qrcode.png">
+                Download
+            </a>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
